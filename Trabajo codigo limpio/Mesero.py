@@ -25,8 +25,6 @@ class Mesero(Usuario):
         self.propinas += factura.calcular_propina()
         factura.liquidar()
 
-    def ver_pedidos(self, gestion_pedidos: GestionPedido) -> None:
-        return super().ver_pedidos(gestion_pedidos)
-    
-    def ver_mesas(self, gestion_mesas: GestionDeMesas) -> None:
-        return super().ver_mesas(gestion_mesas)
+  def ver_pedidos(self, gestion_pedidos:GestionPedido):
+        print(f"{self.nombre} puede ver todos los pedidos del bar:")
+        gestion_pedidos.visualizar_pedidos()
