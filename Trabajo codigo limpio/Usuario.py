@@ -1,5 +1,3 @@
-from GestionPedido import GestionPedido
-from GestionMesas import GestionDeMesas
 from abc import ABC, abstractmethod
 
 class Usuario(ABC):
