@@ -1,4 +1,3 @@
-from IMesa import IMesa
 from Pedido import Pedido
 
 class Mesa:
