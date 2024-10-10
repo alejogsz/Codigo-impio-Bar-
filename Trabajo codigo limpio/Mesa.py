@@ -1,7 +1,7 @@
 from IMesa import IMesa
 from Pedido import Pedido
 
-class Mesa(IMesa):
+class Mesa:
     def __init__(self, id:int)->None:
         self.id:int = id
         self.estado:str = 'Disponible'
