@@ -6,8 +6,8 @@ from Usuario import Usuario
 from GestionMesas import GestionDeMesas
 
 class Mesero(Usuario):
-    def __init__(self, nombre: str) -> None:
-        super().__init__(nombre)
+    def __init__(self, nombre: str, password: any) -> None:
+        super().__init__(nombre, password)
         self.pedidos_atendidos:list[Pedido] = []
         self.propinas:int = 0
         self.mesas_asignadas = []
