@@ -14,6 +14,6 @@ class GestionPedido:
         if pedido in self.pedidos:
             self.pedidos.remove(pedido)
 
-    def visualizar_pedido(self)->None:
+    def visualizar_pedidos(self)->None:
         for pedido in self.pedidos:
             print(f"pedido {pedido.productos} - Estado: {pedido.estado} ")
